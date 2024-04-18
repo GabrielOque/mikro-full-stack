@@ -10,7 +10,7 @@ export async function GET(request, { params }) {
     });
     return NextResponse.json(microCredits);
   } catch (error) {
-    NextResponse.json({ error: error.message });
+    return NextResponse.json({ error: error.message });
   }
 }
 
